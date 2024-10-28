@@ -1,8 +1,17 @@
 # tincan-tube tiny vpn: 
-a lightweight https/api VPN util 
+A lightweight https/api VPN util for use between docker containers using a bridged docker network on your local machine.
 
-# Build
+## Network Setup
+On youy local machines CLI (unix or WSL) with a standard docker desktop installation, first create a custom Docker network:
+```
+docker network create --driver bridge tincan_vpn_network
+```
 
-# Run
+## Build
+TODO
 
-# FAQ
+## Run
+TODO
+
+## FAQ
+TODO
