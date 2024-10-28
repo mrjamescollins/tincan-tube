@@ -1,4 +1,4 @@
-module tincan-tube/server/vpn
+module tincan-tube
 
 go 1.22.6
 

@@ -24,7 +24,7 @@ func main() {
 	}
 
 	buffer := make([]byte, 1500)
-	n, _, err := conn.ReadFrom(buffer)
+	n, err := conn.Read(buffer)
 	if err != nil {
 		fmt.Println("Error reading packet:", err)
 	}

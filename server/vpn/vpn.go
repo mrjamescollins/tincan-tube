@@ -11,7 +11,7 @@ import (
 // GeneratePrivateKey generates an Ed25519 private key
 func GeneratePrivateKey() ed25519.PrivateKey {
 	publicKey, privateKey, _ := ed25519.GenerateKey(rand.Reader)
-	fmt.Println("pub key: %s", publicKey)
+	fmt.Printf("pub key: %s\n", publicKey)
 	return privateKey
 }
 
