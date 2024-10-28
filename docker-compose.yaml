@@ -1,0 +1,21 @@
+---
+version: '3.8'
+
+services:
+  vpn_server:
+    build: ./server
+    networks:
+      - vpn_network
+    ports:
+      - "51820:51820/udp"
+
+  vpn_client:
+    build: ./client
+    networks:
+      - vpn_network
+    depends_on:
+      - vpn_server
+
+networks:
+  vpn_network:
+    driver: bridge
