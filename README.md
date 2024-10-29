@@ -8,7 +8,9 @@ docker network create --driver bridge vpn_network
 ```
 
 ## Build
-TODO
+```
+docker-compose up --build
+```
 
 ## Run
 TODO
